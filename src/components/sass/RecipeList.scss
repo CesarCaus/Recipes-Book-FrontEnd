@@ -1,0 +1,79 @@
+#recipeList-container {
+    width: 100%;
+    min-height: 70vh;
+    background-color: white;
+    border-radius: 50px 50px 0 0;
+    border-top: 1px solid #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+
+    .recipe-filters {
+        display: flex;
+        height: 50px;
+        justify-content: left;
+        gap: 20px;
+        padding: 20px;
+        width: 60%;
+        margin: 30px auto;
+
+        .filter-prepTime,
+        .filter-servings {
+            padding: 8px 12px;
+            height: fit-content;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: transparent;
+            color: #484848;
+            font-size: 16px;
+
+            span {
+                font-size: 16px;
+            }
+
+            &.active {
+                color: var(--red-color);
+            }
+
+            &:hover {
+            color: #878787;
+            }
+        }
+    }
+
+    .recipes-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        width: 60%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .no-recipe {
+        font-size: 20px;
+        color: #878787;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        img {
+            margin-top: -20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #recipeList-container {
+        .recipes-container {
+            width: 80%;
+        }
+    }
+ }

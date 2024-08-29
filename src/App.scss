@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --red-linear-color: linear-gradient(to right, #EA1D2C, #d41c28);
+  --red-color: #EA1D2C;
+}
+
+#container-main {
+  background: var(--red-linear-color);
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem vertical */
+  height: 10px; /* Altura da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c3c3c3; /* Cor da parte móvel da barra de rolagem */
+  border-radius: 5px; /* Bordas arredondadas da parte móvel */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor de fundo da barra de rolagem */
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f4f4f4;
+  font-weight: 500;
+}
