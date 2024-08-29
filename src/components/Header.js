@@ -1,15 +1,14 @@
 import React from 'react';
 import './sass/Header.scss';
 import { Link } from 'react-router-dom';
-import LoginHeaderComponent from './LoginHeaderComponent';
 
 const Header = ({ onSearchChange, onCategorySelect }) => {
   const handleSearchChange = (e) => {
-    onSearchChange(e.target.value); // Chama a função passada como prop
+    onSearchChange(e.target.value);
   };
 
   const handleCategorySelect = (category) => {
-    onCategorySelect(category); // Chama a função passada como prop
+    onCategorySelect(category);
   };
 
   return (
@@ -32,7 +31,7 @@ const Header = ({ onSearchChange, onCategorySelect }) => {
         <Link to="/dessert" onClick={() => handleCategorySelect('dessert')}>Sobremesas</Link>
         <Link to="/salty" onClick={() => handleCategorySelect('salty')}>Salgados</Link>
       </nav>
-      <LoginHeaderComponent />
+
     </header>
   );
 };
