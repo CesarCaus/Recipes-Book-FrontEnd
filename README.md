@@ -34,7 +34,7 @@ Atualmente, o projeto está focado no desenvolvimento do frontend e não está u
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/cookbook-application.git
+   git clone https://github.com/CesarCaus/Recipes-Book-FronEnd.git
 
 ## Interfaces
 
