@@ -53,7 +53,7 @@ const App = () => {
         />
       </Routes>
       <footer className="footer">
-        <p>Desenvolvido por César Caus, para estudo do framework React</p>
+        <p>Desenvolvido para estudo do React</p>
       </footer>
     </Router>
     </section>
