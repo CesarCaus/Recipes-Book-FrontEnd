@@ -2,22 +2,63 @@
     width: 100%;
     min-height: 70vh;
     background-color: white;
-    border-radius: 50px 50px 0 0;
     border-top: 1px solid #e3e3e3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     padding-bottom: 100px;
 
     .recipe-filters {
         display: flex;
-        height: 50px;
-        justify-content: left;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
         gap: 20px;
         padding: 20px;
-        width: 60%;
+        width: 70%;
         margin: 30px auto;
         font-size: 16px;
+
+        .btn-filters {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+
+        .search-header {
+            width: 300px;
+            height: 30px;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            input {
+                width: calc(100% + 20px);
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                padding: 0 20px;
+                padding-right: 40px;
+                font-weight: 550;
+                letter-spacing: 0.3px;
+                outline: none;
+                border: 1px solid #484848;
+            }
+
+            input::placeholder {
+                color: #484848;
+                font-weight: 550;
+                letter-spacing: 0.3px;
+            }
+
+            span {
+                margin-left: -30px;
+                color: #484848;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
 
         .filter-prepTime,
         .filter-servings {
@@ -42,17 +83,13 @@
             &.active {
                 color: var(--red-color);
             }
-
-            &:hover {
-            color: #878787;
-            }
         }
     }
 
     .recipes-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
         gap: 20px;
     }
@@ -60,11 +97,14 @@
     .no-recipe {
         font-size: 20px;
         color: #878787;
-        margin: auto;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         img {
             margin-top: -20px;

@@ -4,12 +4,12 @@
 }
 
 :root {
-  --red-linear-color: linear-gradient(to right, #EA1D2C, #d41c28);
-  --red-color: #EA1D2C;
+  --red-color: #171D1F;
+  --bg-color-primary: #fff;
 }
 
 #container-main {
-  background: var(--red-linear-color);
+  background: var(--bg-color-primary);
   min-height: 100vh;
 }
 
@@ -36,4 +36,22 @@ footer {
 
   color: #f4f4f4;
   font-weight: 500;
+}
+
+.banner {
+  background: url('../public/assets/background-image.svg') no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  position: relative;
+
+  h1 {
+    color: white;
+    font-size: 2.8em;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    text-align: right;
+    font-weight: 500;
+  }
 }

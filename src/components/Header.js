@@ -14,15 +14,7 @@ const Header = ({ onSearchChange, onCategorySelect }) => {
   return (
     <header>
       <h1>Livro de Receitas</h1>
-      <img src="/assets/background-image.svg" alt="Background" />
-      <div className="search-header">
-        <input
-          type="text"
-          placeholder="Buscar por receitas ou ingredientes"
-          onChange={handleSearchChange}
-        />
-        <span className="material-symbols-outlined">search</span>
-      </div>
+
       <nav>
         <Link to="/" onClick={() => handleCategorySelect('')}>Início</Link>
         <Link to="/breakfast" onClick={() => handleCategorySelect('breakfast')}>Café da manhã</Link>

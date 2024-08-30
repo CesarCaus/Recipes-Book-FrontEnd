@@ -18,46 +18,52 @@ const App = () => {
   };
 
   return (
-
     <section id='container-main'>
-       <Router>
-      <Header onSearchChange={handleSearchChange} onCategorySelect={handleCategorySelect} />
-      <Routes>
-        <Route
-          path="/"
-          element={<RecipeList searchTerm={searchTerm} selectedCategory={selectedCategory} />}
-        />
-        <Route
-          path="/breakfast"
-          element={<RecipeList searchTerm={searchTerm} selectedCategory="breakfast" />}
-        />
-        <Route
-          path="/lunch"
-          element={<RecipeList searchTerm={searchTerm} selectedCategory="lunch" />}
-        />
-        <Route
-          path="/dinner"
-          element={<RecipeList searchTerm={searchTerm} selectedCategory="dinner" />}
-        />
-        <Route
-          path="/dessert"
-          element={<RecipeList searchTerm={searchTerm} selectedCategory="dessert" />}
-        />
-        <Route
-          path="/salty"
-          element={<RecipeList searchTerm={searchTerm} selectedCategory="salty" />}
-        />
-         <Route
-          path="/recipe/:id"
-          element={<RecipePage />}
-        />
-      </Routes>
-      <footer className="footer">
-        <p>Desenvolvido para estudo do React</p>
-      </footer>
-    </Router>
+      <Router>
+        <Header onSearchChange={handleSearchChange} onCategorySelect={handleCategorySelect} />
+        <div className='banner'>
+          <h1>Receitas para <br></br>o seu dia-a-dia!</h1>
+        </div>
+        <Routes>
+          <Route
+            path="/"
+            element={<RecipeList searchTerm={searchTerm} selectedCategory={selectedCategory} />}
+          />
+          <Route
+            path="/breakfast"
+            element={<RecipeList searchTerm={searchTerm} selectedCategory="breakfast" />}
+          />
+          <Route
+            path="/lunch"
+            element={<RecipeList searchTerm={searchTerm} selectedCategory="lunch" />}
+          />
+          <Route
+            path="/dinner"
+            element={<RecipeList searchTerm={searchTerm} selectedCategory="dinner" />}
+          />
+          <Route
+            path="/dessert"
+            element={<RecipeList searchTerm={searchTerm} selectedCategory="dessert" />}
+          />
+          <Route
+            path="/salty"
+            element={<RecipeList searchTerm={searchTerm} selectedCategory="salty" />}
+          />
+          <Route
+            path="/recipe/:id"
+            element={<RecipePage />}
+          />
+          {/* Optional: Add a catch-all route for 404 */}
+          <Route
+            path="*"
+            element={<h2 className="not-found">Page Not Found</h2>}
+          />
+        </Routes>
+        <footer className="footer">
+          <p>Desenvolvido para estudo do React</p>
+        </footer>
+      </Router>
     </section>
-
   );
 };
 
