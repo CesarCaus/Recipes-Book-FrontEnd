@@ -38,7 +38,7 @@ Atualmente, o projeto está focado no desenvolvimento do frontend e não está u
 
 ## Interfaces
 
-<img src="https://github.com/user-attachments/assets/ca20ccbe-bef1-4835-9a3e-bb0dc8e63042" width="100%"/>
+<img src="https://github.com/user-attachments/assets/7e0aa0e5-38cf-4ae5-9d0f-46fe2fc09235" width="100%"/>
 
 
 
